@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+{
+    margin: 0;
+    padding: 0;
+}
+
+#joinform input[type=submit]{
+    border-radius: 10px;
+    width: 80px;height: 80px;
+    font-size: 2em;
+
+}
+
+#wrapBtn{
+    padding-top: 5%;
+    padding-left: 30%;
+}
+
+.wrap {
+    display: grid;
+    height: 150vh;
+    /* width:vh */
+    grid-template:
+
+		"nav header aside" 0.2fr
+		"nav main aside" 1.5fr
+		"nav footer aside" 0.3fr
+		/0.8fr 1fr 0.8fr;
+}
+
+header {
+    grid-area: header;
+    font-size: 2em;
+    text-align: center;
+    /*background-color: rosybrown;*/
+}
+
+main {
+    grid-area: main;
+    /*background-color: royalblue;*/
+    padding-left: 30%;
+}
+
+nav {
+    grid-area: nav;
+    /*background-color: slateblue;*/
+}
+
+aside {
+    grid-area: aside;
+    /*background-color: slategray;*/
+}
+
+footer{
+    grid-area: footer;
+    /*background-color: cornflowerblue;*/
+}
